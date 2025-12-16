@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 20px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 50px;
+  border: 2px solid black;
+}
+
+img {
+  width: 100px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+span {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  pointer-events: none;
+  left: 50%;
+  top: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  animation: animate 6s linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+  }
+}
