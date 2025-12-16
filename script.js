@@ -31,7 +31,7 @@ funny.addEventListener("click", () => {
 
 heart.addEventListener("click", () => {
   div.remove();
-  emojiSpawn("funny");
+  emojiSpawn("heart");
   reloadBtn();
 });
 
